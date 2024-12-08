@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HYPR.note</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>HYPR.note</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about me">About Me</a></li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#FAQ">FAQ</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <h1>HYPR.note - A notepad for all</h1>
+        <div class="font-selector">
+            <label for="fontSelector">Choose Font: </label>
+            <select id="fontSelector">
+                <!-- Options will be added dynamically -->
+            </select>
+        </div>
+        
+        <div class="note-input">
+            <textarea id="noteText" rows="4" placeholder="write anything (Ja Iche lekh bhai)..."></textarea>
+            <button onclick="addNote()">Add Note</button>
+        </div>
+        <div class="notes" id="notes">
+            <!-- Notes will appear here -->
+             
+        </div>
+    </div>
+    <footer id="footer">
+        <p>&copy; 2024 HYPR. All rights reserved.</p>
+        <p> ARX Limited</p>
+    </footer>
+<script src="script.js"></script>        
+</body>
